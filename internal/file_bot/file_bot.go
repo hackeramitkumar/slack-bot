@@ -7,9 +7,12 @@ import (
 	"github.com/slack-go/slack"
 )
 
+const (
+	amit = "hello"
+)
+
 func upload_file() {
-	os.Setenv("SLACK_BOT_TOKEN", "xoxb-4462018505568-5973904069431-akh8FN883tYeR7cRVu9qUjMV")
-	os.Setenv("CHANNEL_ID", "C04D8U36JV7")
+
 	api := slack.New(os.Getenv("SLACK_BOT_TOKEN"))
 	channelArr := []string{os.Getenv("CHANNEL_ID")}
 	fileArr := []string{"DS.pdf", "CC57.pdf"}
